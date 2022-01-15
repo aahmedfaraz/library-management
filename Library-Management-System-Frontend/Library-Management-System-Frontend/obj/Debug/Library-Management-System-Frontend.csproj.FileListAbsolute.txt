@@ -1,0 +1,6 @@
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\bin\Library-Management-System-Frontend.dll.config
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\bin\Library-Management-System-Frontend.dll
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\bin\Library-Management-System-Frontend.pdb
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\obj\Debug\Library-Management-System-Frontend.csprojResolveAssemblyReference.cache
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\obj\Debug\Library-Management-System-Frontend.dll
+E:\GitHub\library-management\Library-Management-System-Frontend\Library-Management-System-Frontend\obj\Debug\Library-Management-System-Frontend.pdb
