@@ -5,8 +5,11 @@
 }
 body {
     font-family: 'Century Gothic';
+    position: relative;
 }
+
 .screen {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -14,6 +17,21 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -10;
+    filter: blur(2px);
+}
+
 .navbar {
     background: linear-gradient(to bottom, #5D00FF, #290070);
     color: white;
@@ -31,8 +49,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(".\bg.PNG")
 }
+
 .form {
     width: 400px;
     display: flex;
@@ -40,8 +58,9 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 1px 10px grey;           
-    overflow: hidden; 
+    box-shadow: 0 1px 10px white;
+    overflow: hidden;
+    background-color: white;
 }
 .form > h2 {
     background-color: black;
@@ -50,10 +69,21 @@ body {
     text-align: center;
     padding: 10px;
 }
-.form > table {
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     width: 100%;
+    background-color: red;
 }
+
+.form-control label {
+    background-color: red;
+}
+
+
 .footer {
     background: linear-gradient(to bottom, #5D00FF, #290070);
     color: white;
@@ -63,4 +93,31 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.btn {
+    background: linear-gradient(to bottom, #5D00FF, #290070);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-center {
+    text-align: center;
 }
