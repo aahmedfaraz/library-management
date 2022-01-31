@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Library System | Ahmed & Saba</title>
+    <title>Library System | Faraz & Saba</title>
     <style>
         * {
             box-sizing: border-box;
@@ -115,12 +115,30 @@
             padding: 10px;
         }
 
+        .main-card > h2 {
+            padding: 5px;
+        }
+
+        .text-input {
+            width: 50%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        .logout {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+            background: linear-gradient(to bottom, #ff2b2b, #b80000)
+        }
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server" class="screen">
         <div class="navbar">
-            <h1>Library Management System</h1>
+            <h1>FARAZ's Library Management System</h1>
+            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" />
         </div>
         <div class="main-container">
             <div class="main-card">
@@ -129,6 +147,10 @@
                     <h2>Hi <asp:Label ID="name" runat="server" Text="Ahmed"></asp:Label>!</h2>
                     <h2>Email: <asp:Label ID="email" runat="server" Text="ahmed@gmail.com"></asp:Label></h2>
                 </div>
+                <h2>Students Req List</h2>
+                <asp:GridView ID="StudentReqGridView" runat="server"></asp:GridView>
+                <asp:TextBox ID="reqID" CssClass="text-input" runat="server">Enter Req ID to proceed</asp:TextBox>
+                <asp:Button ID="issueButton" CssClass="btn" runat="server" Text="Issue Book" />
             </div>
         </div>
         <div class="footer">

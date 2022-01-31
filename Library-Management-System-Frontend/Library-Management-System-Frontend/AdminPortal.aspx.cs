@@ -11,7 +11,6 @@ namespace Library_Management_System_Frontend
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

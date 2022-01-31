@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Library System | Ahmed & Saba</title>
+    <title>Library System | Faraz & Saba</title>
     <style>
         * {
             box-sizing: border-box;
@@ -115,12 +115,30 @@
             padding: 10px;
         }
 
+        .logout {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+            background: linear-gradient(to bottom, #ff2b2b, #b80000)
+        }
+
+        .add {
+            background: linear-gradient(to bottom, limegreen, green)
+        }
+        .update {
+            background: linear-gradient(to bottom, dodgerblue, blue)
+        }
+        .delete {
+            background: linear-gradient(to bottom, tomato, red)
+        }
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server" class="screen">
         <div class="navbar">
-            <h1>Library Management System</h1>
+            <h1>FARAZ's Library Management System</h1>
+            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" />
         </div>
         <div class="main-container">
             <div class="main-card">
@@ -129,6 +147,70 @@
                     <h2>Hi <asp:Label ID="name" runat="server" Text="Ahmed"></asp:Label>!</h2>
                     <h2>Email: <asp:Label ID="email" runat="server" Text="ahmed@gmail.com"></asp:Label></h2>
                 </div>
+                <h2>Multi CRUD Form</h2>
+                <table>
+                    <tr>
+                        <td><label>ID</label></td>
+                        <td><asp:TextBox ID="id" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><asp:TextBox ID="personName" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><asp:TextBox ID="personEmail" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><asp:TextBox ID="personPassword" Width="300px" runat="server" TextMode="Password"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Select Role</label></td>
+                        <td>
+                            <asp:DropDownList ID="role" Width="300px" runat="server">
+                                <asp:ListItem runat="server" Value="student">Student</asp:ListItem>
+                                <asp:ListItem runat="server" Value="librarian">Librarian</asp:ListItem>
+                                <asp:ListItem runat="server" Value="admin">Admin</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Book ID</label></td>
+                        <td><asp:TextBox ID="bookID" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Title</label></td>
+                        <td><asp:TextBox ID="bookTitle" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Author</label></td>
+                        <td><asp:TextBox ID="bookAuthor" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><label>Category</label></td>
+                        <td><asp:TextBox ID="bookCategory" Width="300px" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <asp:Button ID="add" CssClass="btn add" runat="server" Text="Create" />
+                            <asp:Button ID="update" CssClass="btn update" runat="server" Text="Update" />
+                            <asp:Button ID="delete" CssClass="btn delete" runat="server" Text="Delete" />
+                        </td>
+                    </tr>
+                </table>
+                <h2>All Students</h2>
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                <br />
+                <h2>All Books</h2>
+                <asp:GridView ID="GridView2" runat="server"></asp:GridView>
+                <br />
+                <h2>All Admins</h2>
+                <asp:GridView ID="GridView3" runat="server"></asp:GridView>
+                <br />
+                <h2>All Librarians</h2>
+                <asp:GridView ID="GridView4" runat="server"></asp:GridView>
+                <br />
             </div>
         </div>
         <div class="footer">

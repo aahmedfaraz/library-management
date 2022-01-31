@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Library System | Ahmed & Saba</title>
+    <title>Library System | Faraz & Saba</title>
     <style>
         * {
             box-sizing: border-box;
@@ -116,10 +116,21 @@
             padding: 10px;
         }
 
+        .main-card > h2 {
+            padding: 5px;
+        }
+
         .text-input {
             width: 50%;
             padding: 5px;
             margin: 5px 0;
+        }
+
+        .logout {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+            background: linear-gradient(to bottom, #ff2b2b, #b80000)
         }
 
     </style>
@@ -127,7 +138,8 @@
 <body>
     <form id="form2" class="screen" runat="server">
         <div class="navbar">
-            <h1>Library Management System</h1>
+            <h1>FARAZ's Library Management System</h1>
+            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" />
         </div>
         <div class="main-container">
             <div class="main-card">
@@ -136,14 +148,13 @@
                     <h2>Hi <asp:Label ID="name" runat="server" Text="Ahmed"></asp:Label>!</h2>
                     <h2>Email: <asp:Label ID="email" runat="server" Text="ahmed@gmail.com"></asp:Label></h2>
                 </div>
-                <h1>Books List</h1>
+                <h2>All Books List</h2>
                 <asp:TextBox ID="search" CssClass="text-input" runat="server">Search Book By Title or Author</asp:TextBox>
                 <asp:GridView ID="BooksListGridView" runat="server"></asp:GridView>
-                <br />
                 <asp:TextBox ID="bookID" CssClass="text-input" runat="server">Enter Book ID to Issue Book</asp:TextBox>
                 <asp:Button ID="issueButton" CssClass="btn" runat="server" Text="Issue Book" />
                 <br />
-                <h2>Issued Books</h2>
+                <h2>My Issued Books</h2>
                 <asp:GridView ID="GridView1" runat="server"></asp:GridView>
                 <asp:TextBox ID="returningBookID" CssClass="text-input" runat="server">Enter Req ID to return Book</asp:TextBox>
                 <asp:Button ID="returnButton" CssClass="btn" runat="server" Text="Return Book" />
