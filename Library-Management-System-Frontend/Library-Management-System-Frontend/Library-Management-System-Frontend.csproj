@@ -41,6 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -59,13 +60,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPortal.aspx" />
     <Content Include="global.css" />
     <Content Include="images\bg.jpg" />
+    <Content Include="LibrarianPortal.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="StudentPortal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPortal.aspx.cs">
+      <DependentUpon>AdminPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal.aspx.designer.cs">
+      <DependentUpon>AdminPortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianPortal.aspx.cs">
+      <DependentUpon>LibrarianPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrarianPortal.aspx.designer.cs">
+      <DependentUpon>LibrarianPortal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -80,6 +98,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal.aspx.cs">
+      <DependentUpon>StudentPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal.aspx.designer.cs">
+      <DependentUpon>StudentPortal.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

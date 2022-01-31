@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Library System | Ahmed & Saba</title>
+    <title>Library System | Faraz & Saba</title>
     <style>
         * {
             box-sizing: border-box;
@@ -67,7 +67,6 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            box-shadow: 0 0 5px white;
             overflow: hidden;
             background-color: white;
         }
@@ -138,7 +137,7 @@
 <body>
     <form id="form2" class="screen" runat="server">
         <div class="navbar">
-            <h1>Library Management System</h1>
+            <h1>FARAZ's Library Management System</h1>
         </div>
         <div class="form-container">
             <div class="form">
