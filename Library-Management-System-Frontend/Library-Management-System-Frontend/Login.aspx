@@ -67,7 +67,6 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            box-shadow: 0 0 5px white;
             overflow: hidden;
             background-color: white;
         }
