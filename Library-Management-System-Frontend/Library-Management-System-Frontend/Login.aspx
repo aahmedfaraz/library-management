@@ -14,6 +14,8 @@
         body {
             font-family: 'Century Gothic';
             position: relative;
+            top: 0px;
+            left: 0px;
         }
 
         .screen {
@@ -148,7 +150,7 @@
                             <asp:Label ID="Label1" runat="server" Font-Bold="true" Text="Email"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="LoginEmail" runat="server" TextMode="Email" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="email" runat="server" TextMode="Email" Width="100%"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -156,7 +158,7 @@
                             <asp:Label ID="Label2" runat="server" Font-Bold="true" Text="Password"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="LoginPassword" runat="server" TextMode="Password" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="password" runat="server" TextMode="Password" Width="100%"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -173,7 +175,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="button-center">
-                            <asp:Button ID="LoginButton" CssClass="btn" runat="server" Text="Login" />
+                            <asp:Button ID="login" CssClass="btn" runat="server" Text="Login" OnClick="login_Click" />
                         </td>
                     </tr>
                 </table>
@@ -181,11 +183,6 @@
                     <tr>
                         <td class="flex-center">
                             <p>No Account Yet? <a href="SignUp.aspx">Register Yourself</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="flex-center">
-                            <asp:Label ID="message" runat="server" Font-Size="12px" Font-Bold="true" ForeColor="Red" Text="Instruction: Any Message will be shown here."></asp:Label>
                         </td>
                     </tr>
                 </table>

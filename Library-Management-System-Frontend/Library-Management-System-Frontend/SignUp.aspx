@@ -189,7 +189,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="button-center">
-                            <asp:Button ID="SignUpButton" CssClass="btn" runat="server" Text="Sign Up" />
+                            <asp:Button ID="signup" CssClass="btn" runat="server" Text="Sign Up" OnClick="signup_Click1" />
                         </td>
                     </tr>
                 </table>
@@ -197,11 +197,6 @@
                     <tr>
                         <td class="flex-center">
                             <p>Already have an Account? <a href="Login.aspx">Login Yourself</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="flex-center">
-                            <asp:Label ID="message" runat="server" Font-Size="12px" Font-Bold="true" ForeColor="Red" Text="Instruction: Any Message will be shown here."></asp:Label>
                         </td>
                     </tr>
                 </table>
