@@ -42,7 +42,7 @@
 --('Architectural Design','Amna','Computer Science','true'),
 --('Requirement Analyser','Ahmed','Software Engineering','true')
 
---select * from Books
+select * from Books
 
 --create table IssueRequests
 --(
@@ -56,18 +56,30 @@
 --REFERENCES Persons(personId)
 --)
 
---select * from Persons
+select * from Persons
+select * from Books
 
---select * from Persons where role='student'
+--delete from Books
+--delete from IssueRequests
+
+select * from Persons where role='student'
 
 --select * from Persons where role='librarian'
 
---select * from Persons where role='admin'
+select * from Persons where role='admin'
 
 --select personId, name, email from Persons where email='ahmedfaraz1@gmail.com'
 
---select * from Books
+delete from Persons where personId=11
 
---select * from IssueRequests
+select * from IssueRequests
+
+delete from IssueRequests where id in (612,614)
+
+select count(bookId) from IssueRequests where bookId='600' and status='pending'
+
+update Books set availablility='true' where availablility='false'
 
 --select email from Persons where email='ahmedfaraz@gmail.com'
+
+--Insert into IssueRequests values ('pending',@personId,@bookId)

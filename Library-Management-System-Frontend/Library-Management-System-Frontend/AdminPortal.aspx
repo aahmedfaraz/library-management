@@ -138,14 +138,14 @@
     <form id="form1" runat="server" class="screen">
         <div class="navbar">
             <h1>FARAZ's Library Management System</h1>
-            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" />
+            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" OnClick="logout_Click" />
         </div>
         <div class="main-container">
             <div class="main-card">
                 <h1>Admin Portal</h1>
                 <div class="intro">
-                    <h2>Hi <asp:Label ID="name" runat="server" Text="Ahmed"></asp:Label>!</h2>
-                    <h2>Email: <asp:Label ID="email" runat="server" Text="ahmed@gmail.com"></asp:Label></h2>
+                    <h2>Hi <asp:Label ID="name" runat="server" Text="Not Found"></asp:Label>!</h2>
+                    <h2>Email: <asp:Label ID="email" runat="server" Text="notfound@gmail.com"></asp:Label></h2>
                 </div>
                 <h2>Multi CRUD Form</h2>
                 <table>
@@ -155,20 +155,20 @@
                     </tr>
                     <tr>
                         <td><label>Name</label></td>
-                        <td><asp:TextBox ID="personName" Width="300px" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="name2" Width="300px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td><label>Email</label></td>
-                        <td><asp:TextBox ID="personEmail" Width="300px" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="email2" Width="300px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td><label>Password</label></td>
-                        <td><asp:TextBox ID="personPassword" Width="300px" runat="server" TextMode="Password"></asp:TextBox></td>
+                        <td><asp:TextBox ID="password2" Width="300px" runat="server" TextMode="Password"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td><label>Select Role</label></td>
                         <td>
-                            <asp:DropDownList ID="role" Width="300px" runat="server">
+                            <asp:DropDownList ID="role2" Width="300px" runat="server">
                                 <asp:ListItem runat="server" Value="student">Student</asp:ListItem>
                                 <asp:ListItem runat="server" Value="librarian">Librarian</asp:ListItem>
                                 <asp:ListItem runat="server" Value="admin">Admin</asp:ListItem>
@@ -181,21 +181,21 @@
                     </tr>
                     <tr>
                         <td><label>Title</label></td>
-                        <td><asp:TextBox ID="bookTitle" Width="300px" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="title" Width="300px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td><label>Author</label></td>
-                        <td><asp:TextBox ID="bookAuthor" Width="300px" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="author" Width="300px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td><label>Category</label></td>
-                        <td><asp:TextBox ID="bookCategory" Width="300px" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="category" Width="300px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;">
-                            <asp:Button ID="add" CssClass="btn add" runat="server" Text="Create" />
-                            <asp:Button ID="update" CssClass="btn update" runat="server" Text="Update" />
-                            <asp:Button ID="delete" CssClass="btn delete" runat="server" Text="Delete" />
+                            <asp:Button ID="add" CssClass="btn add" runat="server" Text="Create" OnClick="add_Click" />
+                            <asp:Button ID="update" CssClass="btn update" runat="server" Text="Update" OnClick="update_Click" />
+                            <asp:Button ID="delete" CssClass="btn delete" runat="server" Text="Delete" OnClick="delete_Click" />
                         </td>
                     </tr>
                 </table>
