@@ -60,13 +60,13 @@ namespace Library_Management_System_Frontend
         protected global::System.Web.UI.WebControls.TextBox search;
 
         /// <summary>
-        /// BooksListGridView control.
+        /// booksListGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView BooksListGridView;
+        protected global::System.Web.UI.WebControls.GridView booksListGridView;
 
         /// <summary>
         /// bookID control.
@@ -87,13 +87,13 @@ namespace Library_Management_System_Frontend
         protected global::System.Web.UI.WebControls.Button issueButton;
 
         /// <summary>
-        /// GridView1 control.
+        /// MyIssueRequestsGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView MyIssueRequestsGridView;
 
         /// <summary>
         /// returningBookID control.

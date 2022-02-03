@@ -145,18 +145,21 @@
             <div class="main-card">
                 <h1>Student Portal</h1>
                 <div class="intro">
-                    <h2>Hi <asp:Label ID="name" runat="server" Text="Ahmed"></asp:Label>!</h2>
-                    <h2>Email: <asp:Label ID="email" runat="server" Text="ahmed@gmail.com"></asp:Label></h2>
+                    <h2>Hi <asp:Label ID="name" runat="server" Text="NotFound"></asp:Label>!</h2>
+                    <h2>Email: <asp:Label ID="email" runat="server" Text="notfound@gmail.com"></asp:Label></h2>
                 </div>
                 <h2>All Books List</h2>
-                <asp:TextBox ID="search" CssClass="text-input" runat="server">Search Book By Title or Author</asp:TextBox>
-                <asp:GridView ID="BooksListGridView" runat="server"></asp:GridView>
-                <asp:TextBox ID="bookID" CssClass="text-input" runat="server">Enter Book ID to Issue Book</asp:TextBox>
+                <small>Search Book By Title or Author</small>
+                <asp:TextBox ID="search" CssClass="text-input" runat="server" OnTextChanged="search_TextChanged"></asp:TextBox>
+                <asp:GridView ID="booksListGridView" runat="server"></asp:GridView>
+                <small>Enter Book ID to Issue Book</small>
+                <asp:TextBox ID="bookID" CssClass="text-input" runat="server"></asp:TextBox>
                 <asp:Button ID="issueButton" CssClass="btn" runat="server" Text="Issue Book" />
                 <br />
                 <h2>My Issued Books</h2>
-                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-                <asp:TextBox ID="returningBookID" CssClass="text-input" runat="server">Enter Req ID to return Book</asp:TextBox>
+                <asp:GridView ID="MyIssueRequestsGridView" runat="server"></asp:GridView>
+                <small>Enter Req ID to return Book</small>
+                <asp:TextBox ID="returningBookID" CssClass="text-input" runat="server"></asp:TextBox>
                 <asp:Button ID="returnButton" CssClass="btn" runat="server" Text="Return Book" />
             </div>
         </div>
