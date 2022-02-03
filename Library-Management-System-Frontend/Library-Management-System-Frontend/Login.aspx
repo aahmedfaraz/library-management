@@ -168,7 +168,7 @@
                         <td>
                             <asp:DropDownList ID="role" runat="server" Width="100%">
                                 <asp:ListItem runat="server" Value="student">Student</asp:ListItem>
-                                <asp:ListItem runat="server" Value="librarian">Librarian</asp:ListItem>
+                                <asp:ListItem runat="server" Enabled="false" Value="librarian">Librarian</asp:ListItem>
                                 <asp:ListItem runat="server" Value="admin">Admin</asp:ListItem>
                             </asp:DropDownList>
                         </td>

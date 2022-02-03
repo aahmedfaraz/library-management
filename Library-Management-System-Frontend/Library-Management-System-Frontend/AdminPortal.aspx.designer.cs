@@ -60,40 +60,40 @@ namespace Library_Management_System_Frontend
         protected global::System.Web.UI.WebControls.TextBox id;
 
         /// <summary>
-        /// personName control.
+        /// name2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox personName;
+        protected global::System.Web.UI.WebControls.TextBox name2;
 
         /// <summary>
-        /// personEmail control.
+        /// email2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox personEmail;
+        protected global::System.Web.UI.WebControls.TextBox email2;
 
         /// <summary>
-        /// personPassword control.
+        /// password2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox personPassword;
+        protected global::System.Web.UI.WebControls.TextBox password2;
 
         /// <summary>
-        /// role control.
+        /// role2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList role;
+        protected global::System.Web.UI.WebControls.DropDownList role2;
 
         /// <summary>
         /// bookID control.
@@ -105,31 +105,31 @@ namespace Library_Management_System_Frontend
         protected global::System.Web.UI.WebControls.TextBox bookID;
 
         /// <summary>
-        /// bookTitle control.
+        /// title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookTitle;
+        protected global::System.Web.UI.WebControls.TextBox title;
 
         /// <summary>
-        /// bookAuthor control.
+        /// author control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookAuthor;
+        protected global::System.Web.UI.WebControls.TextBox author;
 
         /// <summary>
-        /// bookCategory control.
+        /// category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookCategory;
+        protected global::System.Web.UI.WebControls.TextBox category;
 
         /// <summary>
         /// add control.

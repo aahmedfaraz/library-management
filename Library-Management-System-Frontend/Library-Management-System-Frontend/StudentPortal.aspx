@@ -139,7 +139,7 @@
     <form id="form2" class="screen" runat="server">
         <div class="navbar">
             <h1>FARAZ's Library Management System</h1>
-            <asp:Button ID="logout" CssClass="btn logout" runat="server" Text="Logout" />
+            <asp:Button ID="logout" CssClass="btn logout" OnClick="logout_Click" runat="server" Text="Logout" />
         </div>
         <div class="main-container">
             <div class="main-card">
@@ -149,18 +149,19 @@
                     <h2>Email: <asp:Label ID="email" runat="server" Text="notfound@gmail.com"></asp:Label></h2>
                 </div>
                 <h2>All Books List</h2>
-                <small>Search Book By Title or Author</small>
-                <asp:TextBox ID="search" CssClass="text-input" runat="server" OnTextChanged="search_TextChanged"></asp:TextBox>
+                <small>Search Book By Title, Author, or Category</small>
+                <asp:TextBox ID="search" CssClass="text-input" runat="server"></asp:TextBox>
+                <asp:Button ID="Button1" CssClass="btn"  runat="server" Text="Search"  OnClick="search_TextChanged"/>
                 <asp:GridView ID="booksListGridView" runat="server"></asp:GridView>
                 <small>Enter Book ID to Issue Book</small>
-                <asp:TextBox ID="bookID" CssClass="text-input" runat="server"></asp:TextBox>
-                <asp:Button ID="issueButton" CssClass="btn" runat="server" Text="Issue Book" />
+                <asp:TextBox ID="bookID" CssClass="text-input" TextMode="Number" runat="server"></asp:TextBox>
+                <asp:Button ID="issueButton" CssClass="btn" runat="server" Text="Issue Book" OnClick="issueButton_Click" />
                 <br />
                 <h2>My Issued Books</h2>
                 <asp:GridView ID="MyIssueRequestsGridView" runat="server"></asp:GridView>
                 <small>Enter Req ID to return Book</small>
                 <asp:TextBox ID="returningBookID" CssClass="text-input" runat="server"></asp:TextBox>
-                <asp:Button ID="returnButton" CssClass="btn" runat="server" Text="Return Book" />
+                <asp:Button ID="returnButton" CssClass="btn" runat="server" Text="Return Book" OnClick="returnButton_Click" />
             </div>
         </div>
         <div class="footer">
