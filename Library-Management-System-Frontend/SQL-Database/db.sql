@@ -17,9 +17,8 @@
 --('Saba Rao','sabarao@gmail.com','sabarao123$','librarian'),
 --('Amna Nadeem','amnanadeem1@gmail.com','amnaa123$','student')
 
-
-
 --select * from Persons
+
 
 --create table Books
 --(
@@ -42,7 +41,8 @@
 --('Architectural Design','Amna','Computer Science','true'),
 --('Requirement Analyser','Ahmed','Software Engineering','true')
 
-select * from Books
+--select * from Books
+
 
 --create table IssueRequests
 --(
@@ -56,32 +56,25 @@ select * from Books
 --REFERENCES Persons(personId)
 --)
 
+--select * from IssueRequests
 
---delete from Books
---delete from IssueRequests
-
-select * from Persons where role='student'
-
+---- SOME EXPERIMENTAL QUERIES
+--select * from Persons where role='student'
 --select * from Persons where role='librarian'
-
-select * from Persons where role='admin'
-
+--select * from Persons where role='admin'
 --select personId, name, email from Persons where email='ahmedfaraz1@gmail.com'
-
-delete from Persons where personId=11
-
-
-delete from IssueRequests where id in (612,614)
-
-select count(bookId) from IssueRequests where bookId='600' and status='pending'
-
-update Books set availablility='true' where availablility='false'
-
+--delete from Persons where personId=11
+--delete from IssueRequests where id in (612,614)
+--select count(bookId) from IssueRequests where bookId='600' and status='pending'
+--update Books set availablility='true' where availablility='false'
 --select email from Persons where email='ahmedfaraz@gmail.com'
-
 --Insert into IssueRequests values ('pending',@personId,@bookId)
 
 
+-- MAIN QUERIES
 select * from Persons
+select * from Persons where role='student'
+select * from Persons where role='librarian'
+select * from Persons where role='admin'
 select * from Books
 select * from IssueRequests
