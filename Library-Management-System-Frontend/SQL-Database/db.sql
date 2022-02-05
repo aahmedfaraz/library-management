@@ -56,8 +56,6 @@ select * from Books
 --REFERENCES Persons(personId)
 --)
 
-select * from Persons
-select * from Books
 
 --delete from Books
 --delete from IssueRequests
@@ -72,7 +70,6 @@ select * from Persons where role='admin'
 
 delete from Persons where personId=11
 
-select * from IssueRequests
 
 delete from IssueRequests where id in (612,614)
 
@@ -83,3 +80,8 @@ update Books set availablility='true' where availablility='false'
 --select email from Persons where email='ahmedfaraz@gmail.com'
 
 --Insert into IssueRequests values ('pending',@personId,@bookId)
+
+
+select * from Persons
+select * from Books
+select * from IssueRequests
